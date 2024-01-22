@@ -7,7 +7,7 @@ import "../styles/Home.css";
 import image from "../images/backpg.png";
 import { FiDownload } from "react-icons/fi";
 import MenuMobile from "../components/MenuMobile";
-import Typical from "react-typical";
+import Typewriter from "typewriter-effect"; 
 
 function Home() {
   return (
@@ -29,16 +29,16 @@ function Home() {
               <h1>
                 Ayush Shukla <span className="span">{"/>"}</span>{" "}
               </h1>
-              <Typical
-                steps={[
-                  "MERN Stack Developer",
-                  1000,
-                  "Web Development Student",
-                  1000,
-                ]}
-                loop={Infinity}
-                wrapper="h2"
+              <h2 style={{color: "white"}}>
+              <Typewriter
+                options={{
+                  strings: ["Freelancer", "Web Developer", "Designer", "Programmer", "Developer", "Engineer","Coder"],
+                  autoStart: true,
+                  loop: true,
+                  deleteSpeed: 100,
+                }}
               />
+              </h2>
               <a
                 href="https://drive.google.com/drive/folders/1uQi1SHb6IQk_7CCr7sHVi0EhG6M2pZbw"
                 target="_blank"
